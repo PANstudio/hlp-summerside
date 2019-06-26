@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.3'
+ruby '2.4.6'
 
 gem 'rack'
 gem 'i18n'
