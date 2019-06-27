@@ -131,6 +131,17 @@ section {
     }
   }
 
+  /*Mobile Phone Media Query*/
+  @include mq("super-small", "max-width") {
+    .navbar-brand {
+      img {
+        width: 29%;
+        padding: 2% 5%;
+      }
+    }
+  }
+
+
   /*Laptop Media Query*/
   @include mq("small", "min-width") {
     font-size: 18px;
@@ -196,6 +207,25 @@ header {
   		@include transform(rotate(-90deg));
   	}
   }
+
+  /*Mobile Phone Media Query*/
+  @include mq("super-small", "max-width") {
+    img {
+      width: 50%;
+      padding-top: 15%;
+    }
+    .col-sm-12 {
+      margin: 0;
+
+      h1 {
+        font-size: 2.9rem;
+      }
+
+      a {
+        margin-top: 60px;
+      }
+    }
+  }
 }
 
 
@@ -253,7 +283,18 @@ header {
       font-weight: bolder;
     }
   }
+
+  /*Mobile Phone Media Query*/
+  @include mq("super-small", "max-width") {
+    .image-circle {
+      width: 70%;
+    }
+
+  }
 }
+
+
+
 
 .bg1 {
   height: 700px;
@@ -269,7 +310,6 @@ header {
     background-attachment: inherit;
   }
 }
-
 
 
 
@@ -307,6 +347,13 @@ header {
       margin-left: 20px;
     }
   }
+
+  /*Mobile Phone Media Query*/
+  @include mq("super-small", "max-width") {
+    .sideimg {
+      height: 60vh;
+    }
+  }
 }
 
 
@@ -319,7 +366,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hlp-summerside.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/hlp-summerside.jpg");
 
   p {
     top: 50%;
@@ -380,6 +427,17 @@ header {
     background-repeat: no-repeat;
     background-color: $colorThree;
   }
+
+  /*Mobile Phone Media Query*/
+  @include mq("super-small", "max-width") {
+    .col-sm-3 {
+      height: 25rem;
+    }
+    .obj-txt {
+      padding: 30% 0;
+      height: 5rem;
+    }
+  }
 }
 
 
@@ -400,7 +458,7 @@ header {
     margin-bottom: 60px;
   }
 
-  .col-sm-3 {
+  .col-lg-3 {
     width: 33.33%;
     padding: 6%;
 
@@ -425,6 +483,15 @@ header {
     }
   }
 
+  /*Mobile Phone Media Query*/
+  @include mq("super-small", "max-width") {
+    padding: 25% 0;
+
+    .col-lg-3 {
+      width: unset;
+      padding: 15% 0;
+    }
+  }
 }
 
 
@@ -462,55 +529,52 @@ header {
       padding: 0 10px;
     }
   }
+
+  /*Mobile Phone Media Query*/
+  @include mq("super-small", "max-width") {
+    padding: 25% 0;
+
+    .col-sm-12 {
+      p {
+        padding: 5% 0;
+      }
+    }
+
+    .col-sm-6 {
+      img {
+        width: 50%;
+        padding: 30px 0;
+      }
+    }
+
+  }
 }
 
 
+
+
 #contact {
-  //background-image: -webkit-linear-gradient(90deg, $colorOne 60%, $colorWhite 50%);
   background-color: $colorOne;
-  height: 65vh; //delete once form is fixed
+  height: 65vh;
+
   a {
     text-decoration: none;
   }
 
-  //DELETE THESE CHANGES ONCE FORM IS FIXED
   .link-btn-one {
     color: $colorTwo;
     background-color: $colorWhite;
-  }
 
-  .link-btn-one:hover {
-    background-color: $colorTwo;
-    color: $colorOne;
-  }
-
-  .col-sm-7 {
-    width: 100%;
-
-    .contact-form {
-      margin: 0 auto;
-      padding-top: 40%;
-
-      fieldset {
-        width: 100%;
-      }
+    &:after {
+      background-image: url('/images/arrow-black.svg');
     }
-  }
-  /*Tablet Media Query*/
-  @include mq("extra-small", "min-width") {
-  //background-image: -webkit-linear-gradient(180deg, $colorOne 60%, $colorWhite 50%);
-  background-color: $colorOne;
 
-    .col-sm-7 {
-      width: 50%;
-      float: right;
+    &:hover {
+      color: $colorOne;
+      background-color: $colorTwo;
 
-      .contact-form {
-        padding-top: 40px;
-
-        fieldset {
-          width: calc(50% - 15px);
-        }
+      &:after {
+        background-image: url('/images/arrow-yellow.svg');
       }
     }
   }
