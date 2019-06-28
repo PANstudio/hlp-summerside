@@ -395,6 +395,10 @@ header {
   /*Mobile Phone Media Query*/
   @include mq("super-small", "max-width") {
     background-attachment: inherit;
+
+    p {
+      width: 85%; 
+    }
   }
 }
 
