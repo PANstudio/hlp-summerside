@@ -167,7 +167,7 @@ section {
 /*Landing Page*/
 header {
   width: 100%;
-  height: 105vh;
+  height: auto;
   padding: 12% 0;
   overflow: hidden;
   min-height: 25rem;
@@ -397,7 +397,7 @@ header {
     background-attachment: inherit;
 
     p {
-      width: 85%; 
+      width: 85%;
     }
   }
 }
