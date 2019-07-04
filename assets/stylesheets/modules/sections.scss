@@ -261,7 +261,98 @@ header {
 }
 
 
+
 #testimonials {
+  height: 55vh;
+  padding-right: 9%;
+  background-color: $colorTwo;
+
+  #myCarousel {
+    background-color: $colorTwo;
+
+    .carousel-inner {
+      width: 70%;
+      margin: 0 auto;
+
+      .item {
+        span {
+          font-size: 6rem;
+          font-weight: bolder;
+          color: $colorThree;
+        }
+
+        p {
+          font-size: 1.1rem;
+          text-align: center;
+          color: $colorWhite;
+        }
+        .customer {
+          opacity: 0.8;
+          font-size: 1rem;
+          margin-top: 10px;
+          font-style: italic;
+          color: $colorThree;
+          letter-spacing: 1px;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .carousel-control {
+      opacity: 1;
+      background-image: none;
+
+      span {
+        color: $colorWhite;
+
+        &:hover {
+          color: $colorTwo;
+        }
+      }
+    }
+
+    .carousel-indicators {
+      bottom: -50px;
+    }
+  }
+
+  /*Desktop Media Query*/
+  @include mq("extra-extra-large", "min-width") {
+    #myCarousel {
+      .carousel-inner {
+        .item {
+          p {
+            font-size: 2.2rem;
+          }
+          .customer {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  /*Mobile Phone Media Query*/
+  @include mq("extra-small", "min-width") {
+    padding: 5% 0 0 0;
+
+    #myCarousel {
+      .carousel-inner {
+        .item {
+          p {
+            font-size: .9em;
+          }
+          .customer {
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+#testimonial {
   height: auto;
   background-color: $colorTwo;
 
@@ -462,6 +553,17 @@ header {
       background-color: $colorWhite;
     }
   }
+}
+
+
+#map2 {
+  height: 90vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("/images/Map.jpg");
 }
 
 
