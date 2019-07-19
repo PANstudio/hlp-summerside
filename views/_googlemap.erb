@@ -52,7 +52,7 @@
         type: 'Feature',
         geometry: {
         type: 'Point',
-        coordinates: [ -63.8012048, 46.3984425]
+        coordinates: [ -63.8005342, 46.3983685]
         },
         properties: {
         title: "Sponsorship Vehicle",
@@ -232,7 +232,7 @@
         type: 'Feature',
         geometry: {
         type: 'Point',
-        coordinates: [ -63.7880634, 46.3942743]
+        coordinates: [ -63.7889807, 46.3943908]
         },
         properties: {
         title: "Wyatt Historic House",
@@ -330,7 +330,7 @@
 	el.className = 'marker';
 
 	// make a marker for each feature and add to the map
-	new mapboxgl.Marker(el)
+  new mapboxgl.Marker(el)
 		.setLngLat(marker.geometry.coordinates)
 		.setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
     		.setHTML('<h3>' + marker.properties.title + '</h3>'))
