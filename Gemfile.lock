@@ -9,7 +9,7 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.7.0)
-    json (1.8.2)
+    json (2.2.0)
     mailgun-ruby (1.1.8)
       rest-client (~> 2.0)
     mime-types (3.1)
@@ -79,4 +79,4 @@ RUBY VERSION
    ruby 2.4.6p354
 
 BUNDLED WITH
-   1.16.4
+   2.0.2
