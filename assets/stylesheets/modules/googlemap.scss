@@ -19,22 +19,35 @@
 
             }
         
-            .mapboxgl-popup {
-                max-width: 200px;
-            
-                .mapboxgl-popup-tip{
-                    border-bottom-color: $colorThree;
-                    border-top-color: $colorThree;
-                }
-            
-                .mapboxgl-popup-content {
-                    background-color: $colorThree;
-                    
-                        h3{
-                            padding-right: 15px;
-                        }
+            .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+            .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+            .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+                border-bottom-color: $colorThree;
+            }
+
+            .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+            .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+            .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+                border-top-color: $colorThree;
+            }
+
+            .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+                border-right-color: $colorThree;
+            }
+
+            .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+                border-left-color: $colorThree;
+            }
+
+            .mapboxgl-popup-content {
+                background-color: $colorThree;
+                text-align: center;
+                color: #FFFFFF;
+                
+                    h3{
+                        padding-right: 14px;
                     }
-            }            
-        }
+            }
+        }            
     }
-} 
+}

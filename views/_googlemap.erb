@@ -10,7 +10,7 @@
 
 	var map = new mapboxgl.Map({
 		container: 'map',
-		style: 'mapbox://styles/mapbox/dark-v9',
+		style: 'mapbox://styles/mapbox/dark-v9',  
 		center: [-63.790963, 46.394924],
     zoom: 14.5,
     dragging: false,
@@ -336,6 +336,8 @@
     		.setHTML('<h3>' + marker.properties.title + '</h3>'))
   		.addTo(map);
   });
-  
+
+
+  map.addControl(new mapboxgl.NavigationControl());
   map.scrollZoom.disable();
 </script>

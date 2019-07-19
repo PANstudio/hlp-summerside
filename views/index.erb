@@ -36,57 +36,36 @@
 </section>
 
 
-
-
-<!--Quote-->
-<section id="testimonials">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-  <!--Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <span>“</span>
-        <p>We’re very excited to be launching our first city-wide deployment in
-          Canada, a project which aims to empower the voices of all citizens through
-          a fun and interactive platform. Interactions will continually contribute
-          to the City’s decision making process, whether that be around City budgets,
-          infrastructure or the culture and history of the City.”</p>
-
-        <p>We believe this is the start of an exciting journey for citizens of
-          Summerside, helping them to co-create different areas and aspects of
-          their City, through a unique experience which allows them to literally
-          speak to their City!”</p>
-        <p class="customer">- Tiernan Mines, CEO of Hello Lamp Post</p>
-      </div>
-
-      <div class="item">
-        <span>“</span>
-        <p>This pilot is about finding unique ways to engage our citizens and
-          visitors to participate in direct dialogue about the future direction
-          of our City. This platform is an innovative way to ensure we target a
-          cross section of our demographic while at the same time assisting HLP
-          with North American expansion plans."</p>
-          <p class="customer">- City of Summerside, Economic Development Office</p>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
+<!--Use cases-->
+<section id="tellmewhy" class="container-fluid">
+  <div class="grid-container">
+    <hr align="center">
+    <h2>What's in it for YOU?</h2>
   </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <div class="image-circle">
+            <img src="/images/group.png" alt="icon">
+          </div>
+          <h3>Learn the stories of Summerside &amp; its citizens.</h3>
+        </div>
+
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="image-circle">
+            <img src="/images/negotiation.png" alt="icon">
+          </div>
+          <h3>Keep informed on decisions about your city.</h3>
+        </div>
+
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="image-circle">
+            <img src="/images/feedback.png" alt="icon">
+          </div>
+          <h3>Provide feedback &amp; opinions on your city.</h3>
+        </div>
+      </div>
 </section>
+
 
 
 
@@ -156,8 +135,6 @@
 </section>
 
 
-
-
 <section class="txt container-fluid">
   <div class="row">
     <p>30 objects across your City, including a lighthouse, a flagpole, lamp posts,
@@ -198,34 +175,54 @@
 <%= erb :_googlemap %>
 
 
-<!--Use cases-->
-<section id="tellmewhy" class="container-fluid">
-  <div class="grid-container">
-    <hr align="center">
-    <h2>What's in it for YOU?</h2>
-  </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-3">
-          <div class="image-circle">
-            <img src="/images/group.png" alt="icon">
-          </div>
-          <h3>Learn the stories of Summerside &amp; its citizens.</h3>
-        </div>
+<!--Quote-->
+<section id="testimonials">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-        <div class="col-sm-12 col-md-3 col-lg-3">
-          <div class="image-circle">
-            <img src="/images/negotiation.png" alt="icon">
-          </div>
-          <h3>Keep informed on decisions about your city.</h3>
-        </div>
+  <!--Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <span>“</span>
+        <p>We’re very excited to be launching our first city-wide deployment in
+          Canada, a project which aims to empower the voices of all citizens through
+          a fun and interactive platform. Interactions will continually contribute
+          to the City’s decision making process, whether that be around City budgets,
+          infrastructure or the culture and history of the City.”</p>
 
-        <div class="col-sm-12 col-md-3 col-lg-3">
-          <div class="image-circle">
-            <img src="/images/feedback.png" alt="icon">
-          </div>
-          <h3>Provide feedback &amp; opinions on your city.</h3>
-        </div>
+        <p>We believe this is the start of an exciting journey for citizens of
+          Summerside, helping them to co-create different areas and aspects of
+          their City, through a unique experience which allows them to literally
+          speak to their City!”</p>
+        <p class="customer">- Tiernan Mines, CEO of Hello Lamp Post</p>
       </div>
+
+      <div class="item">
+        <span>“</span>
+        <p>This pilot is about finding unique ways to engage our citizens and
+          visitors to participate in direct dialogue about the future direction
+          of our City. This platform is an innovative way to ensure we target a
+          cross section of our demographic while at the same time assisting HLP
+          with North American expansion plans."</p>
+          <p class="customer">- City of Summerside, Economic Development Office</p>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+  </div>
 </section>
 
 
@@ -254,6 +251,7 @@
     </div>
   </div>
 </section>
+
 
 
 
