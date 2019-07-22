@@ -555,6 +555,67 @@ header {
 }
 
 
+//Hero Objects List
+
+#hero-list {
+  background: $colorOne;
+  padding-bottom: 0;
+
+  .row{
+    margin: 0 8%;
+  }
+
+  .obj-list {
+    height: 50vh;
+
+    .list-container{
+      width: 50%;
+      float: left;
+      padding-top: 30px;
+
+    }
+
+    .left {
+      padding-right: 20px;
+    }
+
+    .right {
+      padding-left: 20px;
+    }
+  }
+
+  .obj-images{
+    background: url('/images/summerside-objects.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height:60vh;
+  }
+
+  @media only screen and (min-width: 768px) {
+    height: 500px;
+  
+    li {
+      font-size: 0.72em;
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+
+    li{
+      font-size: 0.85em;
+    }
+  }
+
+  @media only screen and (min-width: 1140px ) {
+    li {
+      font-size: 0.9em;
+    }
+  }
+
+}
+
+
 #map2 {
   height: 90vh;
   position: relative;
