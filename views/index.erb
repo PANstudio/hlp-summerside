@@ -192,10 +192,16 @@
 </section>
 <script type="text/javascript">
   $.getJSON("https://hello-lamp-post-api.herokuapp.com/locations/59", function(data){
-    console.log(data.conversations);
-    document.getElementById('conversation').innerHTML = data.conversations;
-    document.getElementById('players').innerHTML = data.players;
-    document.getElementById('messages').innerHTML = data.player_messages;
+
+    function comma_add(num){
+      var num_parts = num.toString().split(".");
+      num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      return num_parts.join(".");
+    } 
+
+    document.getElementById('conversation').innerHTML = comma_add(data.conversations);
+    document.getElementById('players').innerHTML = comma_add(data.players);
+    document.getElementById('messages').innerHTML = comma_add(data.player_messages);
     });
 </script>
 
