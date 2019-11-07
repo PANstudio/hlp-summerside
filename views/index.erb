@@ -168,6 +168,36 @@
     </div>
   </div>
 </section> %>
+<section id="statistics">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="figure-holder">
+        <h1 id="conversation">Hello</h1>
+        <h3>Conversation</h3>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="figure-holder">
+        <h1 id="players">1,000</h1>
+        <h3>Players</h3>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="figure-holder">
+        <h1 id="messages">1,000</h1>
+        <h3>Messages</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+  $.getJSON("https://hello-lamp-post-api.herokuapp.com/locations/59", function(data){
+    console.log(data.conversations);
+    document.getElementById('conversation').innerHTML = data.conversations;
+    document.getElementById('players').innerHTML = data.players;
+    document.getElementById('messages').innerHTML = data.player_messages;
+    });
+</script>
 
 
 <!--List of Hero Objects -->
